@@ -39,6 +39,7 @@ const SymbolRow = ({ showControls }) => {
         ctx.secretCombination.includes(symbol)
       ) {
         hints.push(atWrongPlace);
+        duplicateCheck.push(symbol);
       }
     });
 
