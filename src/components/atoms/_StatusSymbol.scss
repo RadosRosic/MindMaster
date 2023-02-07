@@ -1,0 +1,14 @@
+.status-symbol {
+  color: var(--text-dark);
+  border-radius: 50%;
+  font-size: 1rem;
+  &-done {
+    background-color: var(--cool);
+  }
+  &-cached {
+    background-color: var(--disabled);
+  }
+  &-close {
+    background-color: var(--warmer);
+  }
+}

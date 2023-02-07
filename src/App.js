@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useContext } from "react";
+import CombinationContext from "./context/combination-context";
+import EndGamePage from "./pages/EndGamePage";
+
+import GameScreen from "./pages/GameScreen";
+import MainMenu from "./pages/MainMenu";
+import "./styles/main.scss";
 
 function App() {
+  const ctx = useContext(CombinationContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!ctx.gameEnded && !ctx.isPlaying && <MainMenu />}
+      {!ctx.gameEnded && ctx.isPlaying && <GameScreen />}
+      {ctx.gameEnded && <EndGamePage />}
+    </>
   );
 }
 

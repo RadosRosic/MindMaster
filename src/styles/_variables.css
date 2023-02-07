@@ -1,0 +1,30 @@
+:root {
+  --text-dark: #343a40;
+  --text-light: #f8f9fa;
+
+  --primary: #ffd43b;
+  --primary-dark: #fcc419;
+  --primary-edge: #fab005;
+
+  --secondary: #9775fa;
+  --secondary-dark: #845ef7;
+  --secondary-edge: #7950f2;
+
+  --disabled: #ced4da;
+  --disabled-edge: #868e96;
+
+  --cool: #a9e34b;
+  --cool-dark: #94d82d; /* win screen bg */
+  --cool-edge: #82c91e;
+
+  --warm: #ffa94d;
+  --warm-dark: #ff922b;
+  --warm-edge: #fd7e14;
+
+  --warmer: #ff8787;
+  --warmer-dark: #ff6b6b; /* lose screen bg */
+  --warmer-edge: #fa5252;
+
+  --padding-s-s: 0.5rem;
+  --padding-s-l: 1rem 1.5rem;
+}

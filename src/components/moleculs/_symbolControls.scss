@@ -1,0 +1,20 @@
+.symbol-controls {
+  padding: 1rem 0.5rem;
+  position: absolute;
+  bottom: 0.25rem;
+  display: flex;
+  justify-content: space-around;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  > :not(:first-child) {
+    margin-left: 3px;
+  }
+  @media screen and (min-width: "600px") {
+    margin: 0 auto;
+    width: 50%;
+  }
+  @media screen and (min-width: "960px") {
+    width: 35%;
+  }
+}

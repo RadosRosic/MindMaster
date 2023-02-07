@@ -1,0 +1,166 @@
+.pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  &-primary {
+    background: var(--primary-edge);
+  }
+  &-secondary {
+    background: var(--secondary-edge);
+  }
+  &-cool {
+    background: var(--cool-edge);
+  }
+  &-warm {
+    background: var(--warm-edge);
+  }
+  &-warmer {
+    background: var(--warmer-edge);
+  }
+}
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 42px;
+  border-radius: 12px;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  &-primary {
+    background: var(--primary);
+  }
+  &-secondary {
+    background: var(--secondary);
+  }
+  &-cool {
+    background: var(--cool);
+  }
+  &-warm {
+    background: var(--warm);
+  }
+  &-warmer {
+    background: var(--warmer);
+  }
+}
+
+.pushable:hover {
+  filter: brightness(110%);
+}
+.pushable:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+.pushable:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+.pushable:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.pushable:disabled {
+  cursor: not-allowed;
+  outline-offset: unset;
+  transition: unset;
+  .front {
+    background-color: var(--disabled);
+    will-change: unset;
+    transition: none;
+    transform: unset;
+  }
+  .edge {
+    background-color: var(--disabled-edge);
+  }
+  .shadow {
+    will-change: unset;
+    transform: unset;
+    transition: unset;
+  }
+  &.pushable:hover {
+    filter: unset;
+  }
+  &.pushable:hover .front {
+    transform: unset;
+    transition: unset;
+  }
+  &.pushable:active .front {
+    transform: unset;
+    transition: unset;
+  }
+  &.pushable:hover .shadow {
+    transform: unset;
+    transition: unset;
+  }
+  &.pushable:active .shadow {
+    transform: unset;
+    transition: unset;
+  }
+}
+
+.square {
+  padding: var(--padding-s-s);
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  .btn-content {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+}
+
+.rectangle {
+  width: 18rem;
+  padding: var(--padding-s-l);
+  .btn-content {
+    @include flex-center-between;
+  }
+}
+
+.btn-text {
+  font-family: "Righteous";
+}
+
+.btn-content {
+  font-size: 1.5rem;
+}
+
+.txt-light {
+  color: var(--text-light);
+}
+
+.txt-dark {
+  color: var(--fotn-dark);
+}

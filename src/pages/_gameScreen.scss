@@ -1,0 +1,28 @@
+.game-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-screen_symbol-rows {
+  height: 87.5%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.63);
+  -webkit-backdrop-filter: blur(12px);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.63);
+
+  @media screen and (min-width: "600px") {
+    border-radius: 16px;
+    margin: 0 auto;
+    width: 50%;
+  }
+  @media screen and (min-width: "960px") {
+    width: 35%;
+  }
+  @media screen and (min-width: "1440px") {
+    width: 25%;
+  }
+}
