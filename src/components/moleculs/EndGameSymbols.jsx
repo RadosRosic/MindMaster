@@ -5,8 +5,8 @@ import Symbol from "../atoms/Symbol";
 
 const EndGameSymbols = () => {
   const ctx = useContext(CombinationContext);
-  const correctCombination = ctx.secretCombination.map((symbol) => (
-    <Symbol icon={symbol} />
+  const correctCombination = ctx.secretCombination.map((symbol, i) => (
+    <Symbol icon={symbol} key={`${symbol}${i}`} />
   ));
   return (
     <div className="end-game_solution">
