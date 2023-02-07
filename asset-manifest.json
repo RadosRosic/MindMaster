@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/RadosRosic/MindMaster/static/css/main.915dd9ae.css",
+    "main.js": "/RadosRosic/MindMaster/static/js/main.1ad1a27c.js",
+    "static/media/fortress.png": "/RadosRosic/MindMaster/static/media/fortress.9cb19f71f1e8919a9b7f.png",
+    "static/media/lost.png": "/RadosRosic/MindMaster/static/media/lost.d064916ffa0c464ed1f2.png",
+    "static/media/SedgwickAveDisplay-Regular.ttf": "/RadosRosic/MindMaster/static/media/SedgwickAveDisplay-Regular.74c170e1c62b0cd3e85e.ttf",
+    "static/media/won.png": "/RadosRosic/MindMaster/static/media/won.43b80e117975f760359b.png",
+    "static/media/Righteous-Regular.ttf": "/RadosRosic/MindMaster/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
+    "index.html": "/RadosRosic/MindMaster/index.html",
+    "main.915dd9ae.css.map": "/RadosRosic/MindMaster/static/css/main.915dd9ae.css.map",
+    "main.1ad1a27c.js.map": "/RadosRosic/MindMaster/static/js/main.1ad1a27c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.915dd9ae.css",
+    "static/js/main.1ad1a27c.js"
+  ]
+}
