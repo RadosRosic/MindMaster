@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import CombinationContext from "../context/combination-context";
-
 import Button from "../components/atoms/Button";
 import EndGameSymbols from "../components/moleculs/EndGameSymbols";
 import EndGameText from "../components/moleculs/EndGameText";
