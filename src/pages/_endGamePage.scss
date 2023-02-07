@@ -9,10 +9,10 @@
 
 .end-game-bg- {
   &won {
-    background-color: var(--cool);
+    background-color: var(--cool-dark);
   }
   &lost {
-    background-color: var(--warmer);
+    background-color: var(--warmer-dark);
   }
 }
 
