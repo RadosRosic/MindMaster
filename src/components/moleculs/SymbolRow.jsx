@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import CombinationContext from "../../context/combination-context";
+
 import Button from "../atoms/Button";
 import Symbol from "../atoms/Symbol";
 import StatusSymbolGroup from "./StatusSymbolGroup";
