@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import CombinationContext from "./context/combination-context";
 import EndGamePage from "./pages/EndGamePage";
 
