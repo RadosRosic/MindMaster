@@ -21,6 +21,11 @@ const SymbolRow = ({ showControls }) => {
     const hints = [];
     const frequency = {};
 
+    if (ctx.secretCombination.join("") === guess.join("")) {
+      ctx.setWon(true);
+      return;
+    }
+
     for (let i = 0; i < ctx.secretCombination.length; i++) {
       if (ctx.secretCombination[i] === guess[i]) {
         hints.push(correct);
@@ -76,7 +81,7 @@ const SymbolRow = ({ showControls }) => {
               disabled={guess.length < 4}
               color="primary"
               icon="hand_bones"
-              onClick={() => attemptGuess()}
+              onClick={attemptGuess}
             />
           )}
           {showStatus && <StatusSymbolGroup statusSymbolArr={statusSymbols} />}
