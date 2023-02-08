@@ -5,6 +5,10 @@
 }
 
 .game-screen_symbol-rows {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
   height: 87.5%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);

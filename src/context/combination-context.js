@@ -44,15 +44,15 @@ export const CombinationContextProvider = (props) => {
   };
 
   const playGame = () => {
+    generateSecretCombination();
     setIsPlaying(true);
     setRound(1);
     setWon(false);
-    generateSecretCombination();
   };
 
   const quitGame = () => {
-    setIsPlaying(false);
     setSecretCombination([]);
+    setIsPlaying(false);
     setRound(1);
     setWon(false);
   };
