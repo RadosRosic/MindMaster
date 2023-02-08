@@ -6,9 +6,9 @@
     background-color: var(--cool);
   }
   &-cached {
-    background-color: var(--disabled);
+    background-color: var(--warm);
   }
   &-close {
-    background-color: var(--warmer);
+    background-color: var(--disabled);
   }
 }

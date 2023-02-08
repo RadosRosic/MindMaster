@@ -1,20 +1,21 @@
+.controls {
+  @include flex-center;
+  height: 100%;
+  width: 100%;
+}
+
+.controls_guess-button {
+  position: absolute;
+  bottom: 5rem;
+}
+
 .symbol-controls {
   padding: 1rem 0.5rem;
   position: absolute;
-  bottom: 0.25rem;
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   left: 50%;
   transform: translate(-50%, 0);
-
-  > :not(:first-child) {
-    margin-left: 3px;
-  }
-  @media screen and (min-width: "600px") {
-    margin: 0 auto;
-    width: 50%;
-  }
-  @media screen and (min-width: "960px") {
-    width: 35%;
-  }
+  gap: 0.25rem;
 }

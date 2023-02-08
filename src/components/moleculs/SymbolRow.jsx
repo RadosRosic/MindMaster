@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import CombinationContext from "../../context/combination-context";
-import Button from "../atoms/Button";
 import Symbol from "../atoms/Symbol";
 import StatusSymbolGroup from "./StatusSymbolGroup";
 import SymbolControls from "./SymbolControls";
@@ -76,19 +75,17 @@ const SymbolRow = ({ showControls }) => {
           {guess[3] && <Symbol icon={guess[3]} />}
         </div>
         <div className="guess-row_controls">
-          {!showStatus && (
-            <Button
-              disabled={guess.length < 4}
-              color="primary"
-              icon="hand_bones"
-              onClick={attemptGuess}
-            />
-          )}
           {showStatus && <StatusSymbolGroup statusSymbolArr={statusSymbols} />}
         </div>
       </div>
 
-      {showControls && <SymbolControls guess={guess} setGuess={setGuess} />}
+      {showControls && (
+        <SymbolControls
+          guess={guess}
+          attemptGuess={attemptGuess}
+          setGuess={setGuess}
+        />
+      )}
     </>
   );
 };
