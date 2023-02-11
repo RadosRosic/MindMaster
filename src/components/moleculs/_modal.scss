@@ -1,0 +1,57 @@
+.modal {
+  @include flex-center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.modal-bg-transparency {
+  background-color: rgba($color: #000000, $alpha: 0.85);
+}
+
+.modal-content {
+  background-color: var(--secondary);
+  padding: var(--padding-s-s);
+  color: var(--text-light);
+  font-family: "Righteous";
+  border-radius: 1rem;
+  height: 320px;
+  width: 320px;
+  transition: 0.5s;
+  position: relative;
+  top: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-show {
+  top: 0;
+}
+
+.hints-description {
+  list-style: none;
+  li {
+    @include flex-vertical-center;
+    > * {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.modal-buttons {
+  @include flex-between;
+  padding: 0.5rem;
+}
+
+.example-combination {
+  @include flex-center-between;
+  > span {
+    @include flex-center;
+    gap: 0.5rem;
+  }
+}

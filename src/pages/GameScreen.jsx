@@ -9,7 +9,7 @@ const GameScreen = () => {
 
   return (
     <div className="game-screen">
-      <GameControls quitGame={ctx.quitGame} />
+      <GameControls />
       <div className="game-screen_symbol-rows">
         {ctx.round >= 1 && <SymbolRow showControls={ctx.round === 1} />}
         {ctx.round >= 2 && <SymbolRow showControls={ctx.round === 2} />}

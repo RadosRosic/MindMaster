@@ -11,7 +11,7 @@ const SymbolControls = ({ guess, setGuess, attemptGuess }) => {
       <div className="controls_guess-button">
         <Button
           text="Guess"
-          icon="security"
+          icon="hand_bones"
           shape="rectangle"
           onClick={attemptGuess}
           disabled={guess.length < 4}
