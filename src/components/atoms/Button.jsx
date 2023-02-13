@@ -21,7 +21,7 @@ const Button = ({
       <span className={`edge edge-${color}`}></span>
       <span className={`front front-${color} ${shape}`}>
         <div className={`btn-content ${txtColor}`}>
-          <span className={"btn-text"}>{text}</span>
+          <span className="btn-text">{text}</span>
           <span className="material-symbols-outlined">{icon}</span>
         </div>
       </span>

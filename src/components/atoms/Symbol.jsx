@@ -21,7 +21,9 @@ const Symbol = ({ icon }) => {
 
   return (
     <div className={`symbol symbol-bg-${color}`}>
-      <span className="material-symbols-outlined">{icon}</span>
+      <span className="material-symbols-outlined prevent-text-highlight">
+        {icon}
+      </span>
     </div>
   );
 };
