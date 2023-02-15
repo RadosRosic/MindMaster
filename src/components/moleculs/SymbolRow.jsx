@@ -18,7 +18,7 @@ const SymbolRow = ({ showControls }) => {
 
   const successCheck = () => {
     const hints = [];
-    const frequency = {};
+    const symbolRepetition = {};
 
     if (ctx.secretCombination.join("") === guess.join("")) {
       ctx.setWon(true);
@@ -28,19 +28,20 @@ const SymbolRow = ({ showControls }) => {
     for (let i = 0; i < ctx.secretCombination.length; i++) {
       if (ctx.secretCombination[i] === guess[i]) {
         hints.push(correct);
+      } else if (!symbolRepetition[ctx.secretCombination[i]]) {
+        symbolRepetition[ctx.secretCombination[i]] = 1;
       } else {
-        if (!frequency[ctx.secretCombination[i]]) {
-          frequency[ctx.secretCombination[i]] = 1;
-        } else {
-          frequency[ctx.secretCombination[i]]++;
-        }
+        symbolRepetition[ctx.secretCombination[i]]++;
       }
     }
 
     for (let i = 0; i < guess.length; i++) {
-      if (frequency[guess[i]] > 0 && guess[i] !== ctx.secretCombination[i]) {
+      if (
+        symbolRepetition[guess[i]] > 0 &&
+        guess[i] !== ctx.secretCombination[i]
+      ) {
         hints.push(atWrongPlace);
-        frequency[guess[i]]--;
+        symbolRepetition[guess[i]]--;
       }
     }
 
