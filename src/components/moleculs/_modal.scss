@@ -14,6 +14,8 @@
 }
 
 .modal-content {
+  @include flex-between;
+  flex-direction: column;
   background-color: var(--secondary);
   padding: var(--padding-s-s);
   color: var(--text-light);
@@ -24,9 +26,6 @@
   transition: 0.5s;
   position: relative;
   top: -100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .modal-show {
