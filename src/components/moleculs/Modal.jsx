@@ -5,7 +5,7 @@ import Symbol from "../atoms/Symbol";
 import StatusSymbol from "../atoms/StatusSymbol";
 import StatusSymbolGroup from "./StatusSymbolGroup";
 
-const statusSymbolArr = ["done", "done", "cached", "close"];
+const exampleStatusSymbols = ["done", "done", "cached", "close"];
 
 const Modal = () => {
   const mdlCtx = useContext(ModalContext);
@@ -63,7 +63,7 @@ const Modal = () => {
           <Symbol icon="swords" />
           <Symbol icon="sports_bar" />
         </span>
-        <StatusSymbolGroup statusSymbolArr={statusSymbolArr} />
+        <StatusSymbolGroup exampleStatusSymbols={exampleStatusSymbols} />
       </div>
       <p>
         This means that two symbols are in the secret combination and are at a

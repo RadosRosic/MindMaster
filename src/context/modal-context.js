@@ -12,11 +12,11 @@ export const ModalContextProvider = (props) => {
 
   const showModal = () => {
     setIsModalShowing(true);
-    setTimeout(() => setIsModalShowingClass(true), 1);
+    setTimeout(() => setIsModalShowingClass(true));
   };
   const hideModal = () => {
     setIsModalShowingClass(false);
-    setTimeout(() => setIsModalShowing(false), 200);
+    setTimeout(() => setIsModalShowing(false), 500);
   };
 
   return (

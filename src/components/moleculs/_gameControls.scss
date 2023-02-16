@@ -1,4 +1,11 @@
 .game-controls {
   @include flex-center-between;
   padding: 1rem 0.5rem;
+  animation: spread 0.8s;
+}
+
+@keyframes spread {
+  0% {
+    transform: scale(0.1);
+  }
 }

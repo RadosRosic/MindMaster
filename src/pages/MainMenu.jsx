@@ -20,6 +20,7 @@ const MainMenu = () => {
             color="primary"
             icon="sports_esports"
             onClick={ctx.playGame}
+            className="play-btn"
           />
           <Button
             shape="rectangle"

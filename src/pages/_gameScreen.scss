@@ -5,6 +5,7 @@
 }
 
 .game-screen_symbol-rows {
+  animation: slide-down 0.8s;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -28,5 +29,11 @@
   }
   @media screen and (min-width: "1440px") {
     width: 22.5%;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
   }
 }
