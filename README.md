@@ -8,3 +8,4 @@ Logical game of code breaking.
 > npm start
 
 # Good Luck
+https://mind-master.vercel.app/
